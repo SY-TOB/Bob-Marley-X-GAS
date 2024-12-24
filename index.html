@@ -55,7 +55,7 @@
     .parallax-section {
       position: relative;
       width: 100%;
-      height: 100vh;
+      min-height: 100vh;
       background: url('./bob-marley.jpg') no-repeat center center/cover;
       display: flex;
       align-items: center;
@@ -97,7 +97,7 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 20px;
-      padding: 40px 20px;
+      padding: 80px 20px;
       align-items: center;
       background: linear-gradient(135deg, #2E8B57, #1A1A1A);
       color: #FFF;
@@ -194,9 +194,9 @@
         grid-template-columns: 1fr;
         grid-template-areas: 
           "main"
-          "content"
           "side1"
-          "side2";
+          "side2"
+          "content";
       }
 
       .two-column-section {
@@ -207,6 +207,15 @@
       .two-column-section img {
         margin-bottom: 20px;
       }
+
+      .catalog-item img:nth-child(2) { 
+        margin-top: 0;
+      }
+
+      .two-column-section .text-content {
+      font-size: 1.4rem;
+      line-height: 1.8;
+    }
     }
 
     .highlight-text {
@@ -285,6 +294,16 @@
     .audio-button:hover {
       background-color: #3CB371;
     }
+
+    .shop-btn {
+      background: linear-gradient(135deg, #E42D2D, #F4F43E, #2E8B57, #1A1A1A);
+  padding: 20px;
+  border-radius: 20px;
+  color: black;
+  font-weight: 700;
+  display: inline-block;
+    }
+
   </style>
 </head>
 <body>
@@ -310,14 +329,8 @@
     <img src="./bob-2.jpg" alt="Bob Marley X GAS">
     <div class="text-content">
       <p>
-        Bob Marley was a Jamaican musician and the global ambassador of reggae music.
-        Born on February 6, 1945, he used his music to spread messages of peace, love, and social justice.
-        Known for hits like "No Woman, No Cry" and "One Love," Marley remains an enduring cultural icon.
-        He passed away on May 11, 1981, but his legacy lives on through his music.
+        Bob Marley, a global icon and pioneer of reggae music, embodied spirit of peace, love, and social justice. His timeless hits like "No Woman, No Cry" and "One Love" carry messages of unity and freedom and continue to resonate across generations. Marley's bold, rebellious energy aligns seamlessly with the GAS Jeans ethos, celebrating individuality and self-expression. The GAS x Bob Marley collection captures his enduring legacy, fusing his vibrant spirit with contemporary style.
       </p>
-
-      <!-- <h2>Bob Marley X GAS</h2>
-      <p>The collaboration between BOB MARLEY and GAS merges the iconic legacy of reggae music and the contemporary style of fashion. This unique collection brings Bob Marley's vibrant energy and cultural influence into a cutting-edge apparel line designed to appeal to both music fans and vintage enthusiasts alike. These casual yet statement-making pieces celebrate Marley’s music and ideals. Bold graphics display album artwork, reggae-inspired designs, and powerful phrases, while the vivid prints capture the essence of Marley's legacy.</p> -->
     </div>
   </section>
 
@@ -325,6 +338,10 @@
     <div class="text-content" style="text-align: center;">
       <h2>Bob Marley X GAS</h2>
       <p>The collaboration between BOB MARLEY and GAS merges the iconic legacy of reggae music and the contemporary style of fashion. This unique collection brings Bob Marley's vibrant energy and cultural influence into a cutting-edge apparel line designed to appeal to both music fans and vintage enthusiasts alike. These casual yet statement-making pieces celebrate Marley’s music and ideals. Bold graphics display album artwork, reggae-inspired designs, and powerful phrases, while the vivid prints capture the essence of Marley's legacy.</p>
+
+        <a class="shop-btn" href="https://www.gasjeans.in/bob-marley">Shop Bob Marley X GAS Collection</a>
+
+    
     </div>
 
   </section>
